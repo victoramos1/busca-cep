@@ -15,7 +15,7 @@ export default function Main(){
 
     return(
         <div className={styles.containerNativo}>
-            <h1>Busca CEP</h1>
+            <h1 className={styles.titulo}>Busca CEP</h1>
             <div className={styles.containerElementos}>
                 <label htmlFor="input-cep">Digite um CEP válido:</label>
                 <input type="text" placeholder="Digite aqui" id="input-cep" name="input-cep" ref={cepDigitado} required></input>
