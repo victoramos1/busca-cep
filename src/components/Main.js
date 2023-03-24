@@ -1,5 +1,5 @@
-//import { useEffect } from "react"
 import { useState, useRef } from "react"
+import styles from './Main.module.css'
 
 export default function Main(){
     
@@ -15,15 +15,15 @@ export default function Main(){
         }
     
     return(
-        <>
-            <h1>{resultado.logradouro}</h1>
-            <h1>{resultado.localidade}</h1>
-            <h1>{resultado.bairro}</h1>
-            <h1>{resultado.cep}</h1>
+        <div className={styles.containerNativo}>
+            <h1>Busca CEP</h1>
+            <div className={styles.containerElementos}>
             <label htmlFor="input-cep">Digite um CEP válido:</label>
             <input type="text" placeholder="Digite aqui" id="input-cep" name="input-cep" ref={cepDigitado} required></input>
             <button type="submit" onClick={buscar}>Buscar</button>
+            <h3>{resultado.logradouro}, {resultado.bairro} - {resultado.localidade}/{resultado.uf}</h3>
+            </div>
             
-        </>
+        </div>
     )
 }
