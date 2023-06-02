@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --corPrimaria: #330033;
+  --corSecundaria: #ffffff;
+
+}
+
+.containerNativo {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/background.png');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.containerElementos {
+  box-sizing: border-box;
+  margin: 10vh;
+  width: 37.5rem;
+  height: 18.75rem;
+  background-color: var(--corSecundaria);
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  color: var(--corSecundaria);
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10vh;
+}
+
+h3 {
+  margin: 0.313rem;
+  text-align: center;
+}
+
+label {
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  margin: 1.875rem 0 0.938rem 0;
+}
+
+input {
+  border-radius: 0.313rem;
+  margin: 0.625rem;
+  padding: 0.313rem;
+  border: 0.063rem solid #D9D4D6;
+  width: 11.25rem;
+}
+
+input[type="text"] {
+  text-align: center;
+}
+
+button {
+  border-radius: 0.313rem;
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 0.938rem;
+  margin: 0.938rem;
+  width: 11.875rem;
+  height: 1.875rem;
+  border: none;
+  background-color: #330033;
+  cursor: pointer;
+}
+
+/* Responsividade */
+
+@media (min-width: 1px) and (max-width: 280px) {
+  .containerNativo {
+    background-image: none;
+  }
+
+  .containerElementos {
+    width: 100%;
+    height: 100%;
+    margin-top: 3.125rem;
+  }
+
+  .titulo {
+    color: #330033
+  }
+}
+
+@media (min-width: 281px) and (max-width: 600px) {
+  .containerNativo {
+    background-image: none;
+  }
+
+  .containerElementos {
+    width: 100%;
+    height: 100%;
+    margin-top: 3.125rem;
+  }
+
+  .titulo {
+    color: #330033
+  }
+}
