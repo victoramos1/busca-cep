@@ -10,7 +10,7 @@ function Main() {
     await fetch(`https://viacep.com.br/ws/${cepDigitado.current.value}/json/`)
       .then(retorno => retorno.json())
       .then(dados => setResultado(dados))
-      .catch(err => console.log('Erro no retorno da API'))
+      .catch(erro => console.log('Erro no retorno da API'))
     formataResultado()
   }
 

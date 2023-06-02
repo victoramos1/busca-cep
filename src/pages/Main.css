@@ -8,7 +8,6 @@
 :root {
   --corPrimaria: #330033;
   --corSecundaria: #ffffff;
-
 }
 
 .containerNativo {
@@ -67,13 +66,13 @@ button {
   border-radius: 0.313rem;
   font-family: 'Open-Sans', sans-serif;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--corSecundaria);
   font-size: 0.938rem;
   margin: 0.938rem;
   width: 11.875rem;
   height: 1.875rem;
   border: none;
-  background-color: #330033;
+  background-color: var(--corPrimaria);
   cursor: pointer;
 }
 
@@ -91,7 +90,7 @@ button {
   }
 
   .titulo {
-    color: #330033
+    color: var(--corPrimaria)
   }
 }
 
@@ -107,6 +106,6 @@ button {
   }
 
   .titulo {
-    color: #330033
+    color: var(--corPrimaria)
   }
 }
