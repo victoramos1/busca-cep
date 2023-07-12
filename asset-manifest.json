@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/busca-cep/static/css/main.c4953d54.css",
+    "main.js": "/busca-cep/static/js/main.49421746.js",
+    "static/media/background.png": "/busca-cep/static/media/background.4b043097a0f4914e8f35.png",
+    "index.html": "/busca-cep/index.html",
+    "main.c4953d54.css.map": "/busca-cep/static/css/main.c4953d54.css.map",
+    "main.49421746.js.map": "/busca-cep/static/js/main.49421746.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4953d54.css",
+    "static/js/main.49421746.js"
+  ]
+}
